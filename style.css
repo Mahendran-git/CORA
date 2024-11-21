@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Animated Background */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #8e44ad, #3498db, #1abc9c, #f39c12, #e74c3c);
+    background-size: 150% 150%;
+    color: #fff;
+    animation: bgAnimation 10s infinite alternate;
+  }
+
+  /* Gradient Animation for CORA Text */
+.cora-text {
+    background: linear-gradient(90deg, #ff6b6b, #f39c12, #1abc9c, #3498db, #9b59b6);
+    background-size: 400%;  /* Expands gradient for movement */
+    font-weight: 800;
+    font-size: 3.5rem;      /* Larger text for emphasis */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: colorFlow 5s infinite linear;
+  }
+  
+  /* Keyframes for Moving Gradient */
+  @keyframes colorFlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  /* Keyframes for the color flow */
+  @keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  #introPage, #colorPickerPage {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;     /* Increased size */
+    font-weight: 600;    /* Bold weight for emphasis */
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;   /* Increased size */
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    padding: 10px 22px;
+  font-size: 1.1rem;   /* Increased font size */
+  font-weight: 600;
+  border: none;
+  background: #fff;
+  color: #8e44ad;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+ 
+  }
+  
+  button:hover {
+    background: #8e44ad;
+    color: #fff;
+  }
+  
+  .color-info {
+    margin-top: 20px;
+  }
+  
+  .color-code {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .color-code span {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
